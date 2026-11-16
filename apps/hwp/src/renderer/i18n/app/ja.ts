@@ -4,6 +4,7 @@ export const ja = {
   loading: '文書を開いています…',
   editorFailed: 'エディターを起動できませんでした。',
   openFailed: '文書を開けませんでした。',
+  openTooLarge: '文書を開けませんでした。{mb}MB の上限を超えています。',
   pdfImportCancelled: 'PDF の取り込みを取り消しました。このタブは閉じてかまいません。',
   saveFailed: '文書を保存できませんでした。',
   fileOpen: '開く…',

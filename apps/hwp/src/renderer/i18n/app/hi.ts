@@ -4,6 +4,7 @@ export const hi = {
   loading: 'दस्तावेज़ खोला जा रहा है…',
   editorFailed: 'संपादक शुरू नहीं हो सका।',
   openFailed: 'दस्तावेज़ खोला नहीं जा सका।',
+  openTooLarge: 'दस्तावेज़ खोला नहीं जा सका: यह {mb}MB की सीमा से अधिक है।',
   pdfImportCancelled: 'PDF आयात रद्द कर दिया गया। आप यह टैब बंद कर सकते हैं।',
   saveFailed: 'दस्तावेज़ सहेजा नहीं जा सका।',
   fileOpen: 'खोलें…',

@@ -44,7 +44,7 @@ import { runSave, type SaveEditorPort } from './save-flow'
 import { AUTOSAVE_IDLE_MS, startAutosave } from './autosave-flow'
 import { PASSWORD_FLAG } from '../../scripts/rhwp-patches.mjs'
 import { STUDIO_SETTINGS_KEY, seededStudioSettings, studioUrl } from './studio-settings'
-import { hwpFormatOfPath } from '../shared/ipc'
+import { MAX_HWP_SAVE_BYTES, hwpFormatOfPath } from '../shared/ipc'
 import type {
   HwpFormat,
   PreviewAction,
@@ -101,6 +101,8 @@ const isBridgeTimeout = (error: unknown) =>
   error instanceof Error && error.message.startsWith('Request timeout')
 /** The user closed the editor's PDF import dialog (a PDF opened to be converted, decision 0116). */
 const isPdfImportCancelled = (error: unknown) => detailOf(error).includes('PDF_IMPORT_CANCELLED')
+/** The main process did not read the file: it is past the size the editor opens and saves. */
+const isTooLarge = (error: unknown) => detailOf(error).includes('hwp: file is too large to open')
 
 function savePortOf(editor: RhwpEditor): SaveEditorPort {
   const agent = createAgentBridge(() => editor)
@@ -301,6 +303,11 @@ export default function App() {
         setPhase('failed')
         if (editor && isPdfImportCancelled(error)) {
           setNotice({ tone: 'info', key: 'pdfImportCancelled', sticky: true })
+          return
+        }
+        if (editor && isTooLarge(error)) {
+          const mb = MAX_HWP_SAVE_BYTES / 1024 / 1024
+          setNotice({ tone: 'error', key: 'openTooLarge', params: { mb } })
           return
         }
         setNotice({

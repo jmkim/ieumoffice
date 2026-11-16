@@ -4,6 +4,7 @@ export const he = {
   loading: 'פותח את המסמך…',
   editorFailed: 'לא ניתן היה להפעיל את העורך.',
   openFailed: 'לא ניתן היה לפתוח את המסמך.',
+  openTooLarge: 'לא ניתן היה לפתוח את המסמך: הוא חורג מהמגבלה של {mb}MB.',
   pdfImportCancelled: 'ייבוא ה-PDF בוטל. אפשר לסגור את הכרטיסייה הזו.',
   saveFailed: 'לא ניתן היה לשמור את המסמך.',
   fileOpen: 'פתיחה…',

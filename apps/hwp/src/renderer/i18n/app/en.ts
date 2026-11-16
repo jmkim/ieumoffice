@@ -4,6 +4,7 @@ export const en = {
   loading: 'Opening document…',
   editorFailed: 'The editor could not start.',
   openFailed: 'The document could not be opened.',
+  openTooLarge: 'The document could not be opened: it exceeds the {mb}MB limit.',
   pdfImportCancelled: 'The PDF import was cancelled. You can close this tab.',
   saveFailed: 'The document could not be saved.',
   fileOpen: 'Open…',

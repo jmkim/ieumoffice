@@ -4,6 +4,7 @@ export const cs = {
   loading: 'Otevírání dokumentu…',
   editorFailed: 'Editor se nepodařilo spustit.',
   openFailed: 'Dokument se nepodařilo otevřít.',
+  openTooLarge: 'Dokument se nepodařilo otevřít: překračuje limit {mb} MB.',
   pdfImportCancelled: 'Import PDF byl zrušen. Tuto kartu můžete zavřít.',
   saveFailed: 'Dokument se nepodařilo uložit.',
   fileOpen: 'Otevřít…',

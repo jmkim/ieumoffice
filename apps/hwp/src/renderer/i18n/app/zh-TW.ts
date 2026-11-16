@@ -4,6 +4,7 @@ export const zhTW = {
   loading: '正在開啟文件…',
   editorFailed: '編輯器無法啟動。',
   openFailed: '無法開啟文件。',
+  openTooLarge: '無法開啟文件：超過 {mb}MB 上限。',
   pdfImportCancelled: '已取消 PDF 匯入。可以關閉此分頁。',
   saveFailed: '無法儲存文件。',
   fileOpen: '開啟…',

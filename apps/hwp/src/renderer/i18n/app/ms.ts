@@ -4,6 +4,7 @@ export const ms = {
   loading: 'Membuka dokumen…',
   editorFailed: 'Editor tidak dapat dimulakan.',
   openFailed: 'Dokumen tidak dapat dibuka.',
+  openTooLarge: 'Dokumen tidak dapat dibuka: melebihi had {mb}MB.',
   pdfImportCancelled: 'Import PDF dibatalkan. Anda boleh menutup tab ini.',
   saveFailed: 'Dokumen tidak dapat disimpan.',
   fileOpen: 'Buka…',

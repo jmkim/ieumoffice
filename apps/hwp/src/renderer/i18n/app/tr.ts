@@ -4,6 +4,7 @@ export const tr = {
   loading: 'Belge açılıyor…',
   editorFailed: 'Düzenleyici başlatılamadı.',
   openFailed: 'Belge açılamadı.',
+  openTooLarge: 'Belge açılamadı: {mb}MB sınırını aşıyor.',
   pdfImportCancelled: 'PDF içe aktarma iptal edildi. Bu sekmeyi kapatabilirsiniz.',
   saveFailed: 'Belge kaydedilemedi.',
   fileOpen: 'Aç…',

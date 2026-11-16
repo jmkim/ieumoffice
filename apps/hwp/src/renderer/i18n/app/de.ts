@@ -4,6 +4,8 @@ export const de = {
   loading: 'Dokument wird geöffnet…',
   editorFailed: 'Der Editor konnte nicht gestartet werden.',
   openFailed: 'Das Dokument konnte nicht geöffnet werden.',
+  openTooLarge:
+    'Das Dokument konnte nicht geöffnet werden: Es überschreitet das Limit von {mb} MB.',
   pdfImportCancelled: 'Der PDF-Import wurde abgebrochen. Sie können diesen Tab schließen.',
   saveFailed: 'Das Dokument konnte nicht gespeichert werden.',
   fileOpen: 'Öffnen…',

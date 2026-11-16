@@ -4,6 +4,7 @@ export const vi = {
   loading: 'Đang mở tài liệu…',
   editorFailed: 'Không thể khởi động trình soạn thảo.',
   openFailed: 'Không thể mở tài liệu.',
+  openTooLarge: 'Không thể mở tài liệu: vượt quá giới hạn {mb}MB.',
   pdfImportCancelled: 'Đã hủy nhập PDF. Bạn có thể đóng thẻ này.',
   saveFailed: 'Không thể lưu tài liệu.',
   fileOpen: 'Mở…',

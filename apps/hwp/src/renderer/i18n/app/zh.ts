@@ -3,6 +3,7 @@ export const zh = {
   loading: '正在打开文档…',
   editorFailed: '编辑器无法启动。',
   openFailed: '无法打开文档。',
+  openTooLarge: '无法打开文档：超过 {mb}MB 上限。',
   pdfImportCancelled: '已取消 PDF 导入。可以关闭此标签页。',
   saveFailed: '无法保存文档。',
   fileOpen: '打开…',

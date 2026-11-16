@@ -4,6 +4,7 @@ export const fr = {
   loading: 'Ouverture du document…',
   editorFailed: 'L’éditeur n’a pas pu démarrer.',
   openFailed: 'Le document n’a pas pu être ouvert.',
+  openTooLarge: 'Le document n’a pas pu être ouvert : il dépasse la limite de {mb} Mo.',
   pdfImportCancelled: "L'importation du PDF a été annulée. Vous pouvez fermer cet onglet.",
   saveFailed: 'Le document n’a pas pu être enregistré.',
   fileOpen: 'Ouvrir…',
